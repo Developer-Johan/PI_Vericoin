@@ -1,0 +1,10 @@
+FROM ubuntu1804
+
+RUN apt update -y
+RUN apt upgrade -y
+
+RUN git clone -v https://github.com/vericoin/vericoin.git ~/git/vericoin/
+
+RUN cd ~/git/vericoin/src/ && make -f makefile.unix
+
+RUN cp ~/git/vericoin/src/vericoind /usr/bin/
