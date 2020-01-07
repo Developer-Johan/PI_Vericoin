@@ -16,13 +16,17 @@ git clone -v https://github.com/Developer-Johan/PI_Vericoin.git ~/git/PI_Vericoi
 cd ~/git/PI_Vericoin/Scripts/
 
 #Run pi_update
+chmod u+x ./pi_update.sh
 ./pi_update.sh
 
 #Run pi_installeprogramms
+chmod u+x ./pi_installeprogramms.sh
 ./pi_installeprogramms.sh
 
 #Run pi_installdocker
+chmod u+x ./pi_installdocker.sh
 ./pi_installdocker.sh
 
 #Run pi_setupdockervericoinvolume
+chmod u+x ./pi_setupdockervericoinvolume.sh
 ./pi_setupdockervericoinvolume.sh
