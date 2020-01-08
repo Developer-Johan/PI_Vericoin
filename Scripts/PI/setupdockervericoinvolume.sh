@@ -34,11 +34,11 @@ fi
 
 cd /var/lib/docker/volumes/vericoind_root_home/_data/
 
-#!/bin/bash
+echo "Test 1"
 for filename in ~/git/PI_Vericoin/Scripts/Vericoin/; do
 		echo "$filename"
 done
-
+echo "Test 2"
 
 
 #cd /var/lib/docker/volumes/vericoind_root_home/_data/
