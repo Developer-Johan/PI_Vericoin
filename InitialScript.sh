@@ -13,6 +13,7 @@ echo "\e[32mClone from git\e[0m"
 if 
 	cd ~/git/PI_Vericoin/; 
 	then 
+		git reset;
 		git pull; 
 	else 
 		git clone -v https://github.com/Developer-Johan/PI_Vericoin.git ~/git/PI_Vericoin/
