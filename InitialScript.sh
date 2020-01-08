@@ -9,8 +9,14 @@ sudo apt -y install git
 
 #Clone from git
 echo "\e[32mClone from git\e[0m"
-git clone -v https://github.com/Developer-Johan/PI_Vericoin.git ~/git/PI_Vericoin/
 
+if 
+	cd ~/git/PI_Vericoin/; 
+	then 
+		git pull; 
+	else 
+		git clone -v https://github.com/Developer-Johan/PI_Vericoin.git ~/git/PI_Vericoin/
+fi
 
 #run scripts for PI_Vericoin
 cd ~/git/PI_Vericoin/Scripts/PI/
