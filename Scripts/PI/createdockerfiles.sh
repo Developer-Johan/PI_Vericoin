@@ -12,5 +12,5 @@ echo "\e[32mCreating vericoin docker file\e[0m"
 echo "\e[33mCurrent path is: '`pwd`'\e[0m"
 cd ~/dockerfiles/
 mkdir -p VericoinDockerFile
-cp -n ~/git/PI_Vericoin/Data/VericoinDockerFile ~/dockerfiles/VericoinDockerFile/
+cp -n ~/git/PI_Vericoin/DockerFiles/VericoinDockerFile ~/dockerfiles/VericoinDockerFile/
 sudo docker build -t ubuntu1804 ./VericoinDockerFile/
