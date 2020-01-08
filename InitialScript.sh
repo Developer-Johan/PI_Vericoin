@@ -37,4 +37,4 @@ sudo ./installdocker.sh
 sudo ./setupdockervericoinvolume.sh
 
 #Run createdockerfiles
-./createdockerfiles.sh
+sudo ./createdockerfiles.sh
