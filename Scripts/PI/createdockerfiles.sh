@@ -19,8 +19,7 @@ mkdir -p VericoinDockerFile
 
 echo "Test7"
 
-cp -n ~/git/PI_Vericoin/DockerFiles/VericoinDockerFile ~/dockerfiles/VericoinDockerFile/dockerfile
-
+cp -n ~/git/PI_Vericoin/DockerFiles/Vericoin/dockerfile ~/dockerfiles/VericoinDockerFile/
 
 echo "Test8"
 
