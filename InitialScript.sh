@@ -22,19 +22,19 @@ fi
 cd ~/git/PI_Vericoin/Scripts/PI/
 
 #Give all scripts righs
-sudo find ~/git/PI_Vericoin/ -name '*.sh' -print0 | xargs -0 sudo chmod 755
+sudo find ~/git/PI_Vericoin/ -name '*.sh' -print0 | xargs -0 sudo chmod +x
 
 #Run update
-sudo ./update.sh
+./update.sh
 
 #Run installeprogramms
-sudo ./installeprogramms.sh
+./installeprogramms.sh
 
 #Runinstalldocker
-sudo ./installdocker.sh
+./installdocker.sh
 
 #Run setupdockervericoinvolume
-sudo ./setupdockervericoinvolume.sh
+./setupdockervericoinvolume.sh
 
 #Run createdockerfiles
-sudo ./createdockerfiles.sh
+./createdockerfiles.sh
