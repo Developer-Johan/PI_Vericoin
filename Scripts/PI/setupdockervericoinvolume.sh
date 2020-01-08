@@ -35,7 +35,7 @@ fi
 cd /var/lib/docker/volumes/vericoind_root_home/_data/
 
 echo "Test 1"
-for filename in ~/git/PI_Vericoin/Scripts/Vericoin/; do
+for filename in ~/git/PI_Vericoin/Scripts/Vericoin/*; do
 		echo "$filename"
 done
 echo "Test 2"
