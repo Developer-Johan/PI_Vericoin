@@ -12,7 +12,7 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/vericoin.c
 		echo "\e[31mvericoin.conf already exsist\e[0m"
 	else
 		echo "\e[32mGetting vericoin.conf\e[0m"
-		cp cd /home/pi/git/PI_Vericoin/Data/vericoin.conf ./
+		cp cd ~/git/PI_Vericoin/Data/vericoin.conf ./
 fi
 
 if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/blk0001.dat ]
@@ -48,3 +48,5 @@ fi
 #		wget http://192.168.2.250/PI/Scripts/vericoin/vericoind_stake_start.sh -O vericoind_stake_start.sh
 #		sudo chmod +x vericoind_stake_start.sh
 #fi
+
+cd ~/
