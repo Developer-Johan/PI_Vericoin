@@ -14,6 +14,7 @@ if
 	cd ~/git/PI_Vericoin/; 
 	then 
 		git reset;
+		git reset --hard
 		git pull; 
 	else 
 		git clone -v https://github.com/Developer-Johan/PI_Vericoin.git ~/git/PI_Vericoin/
