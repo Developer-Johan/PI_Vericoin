@@ -5,19 +5,15 @@ echo "\e[32mCreating docker volume for vericoin\e[0m"
 sudo chown $USER /var/lib/docker/ -R
 mkdir -p /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/
 
-echo "Test1"
 cd /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/
-echo "Test2"
 
 if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/vericoin.conf ]
 	then
 		echo "\e[31mvericoin.conf already exsist\e[0m"
 	else
 		echo "\e[32mGetting vericoin.conf\e[0m"
-		cp cd ~/git/PI_Vericoin/Data/vericoin.conf ./
+		cp ~/git/PI_Vericoin/Data/vericoin.conf ./
 fi
-
-echo "Test3"
 
 if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/blk0001.dat ]
 	then
@@ -33,7 +29,17 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/blk0001.da
 		rm .vericoinnn/bootstrap.zip 
 fi
 
-echo "Test4"
+
+
+
+cd /var/lib/docker/volumes/vericoind_root_home/_data/
+
+#!/bin/bash
+for filename in ~/git/PI_Vericoin/Scripts/Vericoin/; do
+		echo "$filename"
+done
+
+
 
 #cd /var/lib/docker/volumes/vericoind_root_home/_data/
 
