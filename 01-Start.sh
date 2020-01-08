@@ -1,1 +1,0 @@
-curl -fsSL https://raw.githubusercontent.com/Developer-Johan/PI_Vericoin/master/02-InitialScript.sh -o InitialScript.sh && sh InitialScript.sh

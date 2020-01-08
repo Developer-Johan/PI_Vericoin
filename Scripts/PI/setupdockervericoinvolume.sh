@@ -12,7 +12,7 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/vericoin.con
 		echo "\e[31mvericoin.conf already exsist\e[0m"
 	else
 		echo "\e[32mGetting vericoin.conf\e[0m"
-		wget http://192.168.2.250/PI/Git/Data/vericoin.txt -O vericoin.conf
+		cp ~/git/PI_Vericoin/Data/vericoin.conf ./
 fi
 
 if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/blk0001.dat ]

@@ -13,19 +13,19 @@ git clone -v https://github.com/Developer-Johan/PI_Vericoin.git ~/git/PI_Vericoi
 
 
 #run scripts for PI_Vericoin
-cd ~/git/PI_Vericoin/Scripts/
+cd ~/git/PI_Vericoin/Scripts/PI/
 
 #Give all scripts righs
 sudo find ~/git/PI_Vericoin/ -name '*.sh' -print0 | xargs -0 sudo chmod 755
 
-#Run pi_update
-sudo ./pi_update.sh
+#Run update
+sudo ./update.sh
 
 #Run pi_installeprogramms
-sudo ./pi_installeprogramms.sh
+sudo ./installeprogramms.sh
 
 #Run pi_installdocker
-sudo ./pi_installdocker.sh
+sudo ./installdocker.sh
 
 #Run pi_setupdockervericoinvolume
-sudo ./pi_setupdockervericoinvolume.sh
+sudo ./setupdockervericoinvolume.sh
