@@ -21,11 +21,14 @@ sudo find ~/git/PI_Vericoin/ -name '*.sh' -print0 | xargs -0 sudo chmod 755
 #Run update
 sudo ./update.sh
 
-#Run pi_installeprogramms
+#Run installeprogramms
 sudo ./installeprogramms.sh
 
-#Run pi_installdocker
+#Runinstalldocker
 sudo ./installdocker.sh
 
-#Run pi_setupdockervericoinvolume
+#Run setupdockervericoinvolume
 sudo ./setupdockervericoinvolume.sh
+
+#Run createdockerfiles
+sudo ./createdockerfiles.sh

@@ -1,7 +1,18 @@
-FROM ubuntu1804
+FROM ubuntu:18.04
 
-RUN apt update -y
-RUN apt upgrade -y
+RUN apt update -y && \
+    apt upgrade -y
+
+RUN apt-get install -y git \
+                 unzip \
+				 wget \
+				 build-essential \
+                 libboost-all-dev \
+                 libssl1.0-dev \
+                 libdb++-dev \
+                 libminiupnpc-dev \
+                 libcurl4-gnutls-dev \
+                 libminizip-dev
 
 RUN git clone -v https://github.com/vericoin/vericoin.git ~/git/vericoin/
 
