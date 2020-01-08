@@ -33,33 +33,12 @@ fi
 
 
 cd /var/lib/docker/volumes/vericoind_root_home/_data/
+mkdir Scripts
+cd Scripts/
 
-echo "Test 1"
 for filename in ~/git/PI_Vericoin/Scripts/Vericoin/*; do
 		echo "$filename"
 		cp $filename ./
 done
-echo "Test 2"
-
-
-#cd /var/lib/docker/volumes/vericoind_root_home/_data/
-
-#if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/vericoind_startwithstake.sh ]
-#	then
-#		echo "\e[31mvericoind_startwithstake.sh already exsist\e[0m"
-#	else
-#		echo "\e[32mGetting vericoind_startwithstake.sh\e[0m"
-#		wget http://192.168.2.250/PI/Scripts/vericoin/vericoind_startwithstake.sh -O vericoind_startwithstake.sh
-#		sudo chmod +x vericoind_startwithstake.sh
-#fi
-
-#if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/vericoind_stake_start.sh ]
-#	then
-#		echo "\e[31mvericoind_stake_start.sh already exsist\e[0m"
-#	else
-#		echo "\e[32mGetting vericoind_stake_start.sh\e[0m"
-#		wget http://192.168.2.250/PI/Scripts/vericoin/vericoind_stake_start.sh -O vericoind_stake_start.sh
-#		sudo chmod +x vericoind_stake_start.sh
-#fi
 
 cd ~/
