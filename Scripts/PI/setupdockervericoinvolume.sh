@@ -37,7 +37,7 @@ mkdir Scripts
 cd Scripts/
 
 for filename in ~/git/PI_Vericoin/Scripts/Vericoin/*; do
-		printf "$filename"
+		printf "$filename\n"
 		cp $filename ./
 done
 
