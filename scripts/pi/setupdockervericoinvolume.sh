@@ -28,7 +28,8 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/blk0001.dat 
 		printf "\e[31mblk0001.dat already exsist\e[0m\n"
 	else
 		printf "\e[32mGetting bootstrap.zip\e[0m\n"
-		wget https://uc06db72e0d191b4df8155bc2d22.dl.dropboxusercontent.com/cd/0/get/Av2pJ1i1gCDHrRTvyVzdtcDAsiB5BX-VwdZQFbY6xQUqSdyleqxqmt9jJ_7KiH6a85iZqt5E47RnA0cWsuSUZJUIXX7bKc5L7tbbB3DjFslpvKjtbT-gJrsjSotHJ_kedYk/file?dl=1# -O bootstrap.zip
+		#wget https://uc06db72e0d191b4df8155bc2d22.dl.dropboxusercontent.com/cd/0/get/Av2pJ1i1gCDHrRTvyVzdtcDAsiB5BX-VwdZQFbY6xQUqSdyleqxqmt9jJ_7KiH6a85iZqt5E47RnA0cWsuSUZJUIXX7bKc5L7tbbB3DjFslpvKjtbT-gJrsjSotHJ_kedYk/file?dl=1# -O bootstrap.zip
+		wget http://192.168.2.250/PI/bootstrap.zip -O bootstrap.zip
 		printf "\e[32mUnzipping bootstrap.zip\e[0m\n"
 		unzip -q bootstrap.zip
 		cd ..
