@@ -20,11 +20,11 @@ if
 		git clone -v https://github.com/Developer-Johan/pi_vericoin.git ~/git/pi_vericoin/
 fi
 
-#run scripts for pi_vericoin
-cd ~/git/pi_vericoin/Scripts/PI/
-
 #Give all scripts righs
 sudo find ~/git/pi_vericoin/ -name '*.sh' -print0 | xargs -0 sudo chmod +x
+
+#run scripts for pi_vericoin
+cd ~/git/pi_vericoin/scripts/pi/
 
 #Run update
 ./update.sh
