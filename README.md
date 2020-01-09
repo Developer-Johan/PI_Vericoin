@@ -14,5 +14,5 @@
     sudo systemctl start ssh
  7. Check ip --> sudo ifconfig
  8. Connect to your PI with putty
- 9. Run commando: 'curl -fsSL https://raw.githubusercontent.com/Developer-Johan/PI_Vericoin/master/InitialScript.sh -o InitialScript.sh && sh InitialScript.sh'
+ 9. Run commando: 'curl -fsSL https://raw.githubusercontent.com/Developer-Johan/PI_Vericoin/master/initialscript.sh -o initialscript.sh && sh initialscript.sh'
 10. Wait until finished
