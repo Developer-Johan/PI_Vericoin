@@ -37,12 +37,12 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/blk0001.dat 
 		rm .vericoin/bootstrap.zip 
 fi
 
-prinf "Creating scripts directory\n"
+printf "Creating scripts directory\n"
 cd /var/lib/docker/volumes/vericoind_root_home/_data/
 mkdir scripts
 cd scripts/
 
-for filename in ~/git/pi_vericoin/Scripts/vericoin/*; do
+for filename in ~/git/pi_vericoin/scripts/vericoin/*; do
 		printf "Copy to scripts folder: $filename\n"
 		cp $filename ./
 done
