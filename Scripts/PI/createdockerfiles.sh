@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #Creating docker file directory
-echo "\e[32mCreating docker file directory\e[0m"
-echo "\e[33mCurrent path is: '`pwd`'\e[0m"
+printf "\e[32mCreating docker file directory\e[0m"
+printf "\e[33mCurrent path is: '`pwd`'\e[0m"
 cd ~/
 mkdir -p ~/dockerfiles
 
