@@ -20,7 +20,7 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/blk0001.da
 		printf "\e[31mblk0001.dat already exsist\e[0m\n"
 	else
 		printf "\e[32mGetting bootstrap.zip\e[0m\n"
-		wget https://uc1660f5f900674e35c3cbf01dd8.dl.dropboxusercontent.com/cd/0/get/Avxtjjuo4zjPgLE_eywNkFZdELQpkARB8JpP8Mu5Fls1vDeAIVc4AvC-zEl2yfxkwiH2LAiFcxyyQcNPJa4k1HLpkpwW0FJXKKZWQ6raTuYsMCp4ahOI5KOc_fPcWEp36YU/file?dl=1# -O bootstrap.zip
+		wget https://uc06db72e0d191b4df8155bc2d22.dl.dropboxusercontent.com/cd/0/get/Av2pJ1i1gCDHrRTvyVzdtcDAsiB5BX-VwdZQFbY6xQUqSdyleqxqmt9jJ_7KiH6a85iZqt5E47RnA0cWsuSUZJUIXX7bKc5L7tbbB3DjFslpvKjtbT-gJrsjSotHJ_kedYk/file?dl=1# -O bootstrap.zip
 		printf "\e[32mUnzipping bootstrap.zip\e[0m\n"
 		unzip -q bootstrap.zip
 		cd ..
@@ -29,15 +29,13 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoinnn/blk0001.da
 		rm .vericoinnn/bootstrap.zip 
 fi
 
-
-
-
+prinf "Creating scripts directory\n"
 cd /var/lib/docker/volumes/vericoind_root_home/_data/
-mkdir Scripts
-cd Scripts/
+mkdir scripts
+cd scripts/
 
 for filename in ~/git/PI_Vericoin/Scripts/Vericoin/*; do
-		printf "$filename\n"
+		printf "Copy to scripts folder: $filename\n"
 		cp $filename ./
 done
 
