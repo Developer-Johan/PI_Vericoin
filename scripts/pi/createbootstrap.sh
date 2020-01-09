@@ -18,5 +18,5 @@ printf "Zipping bootstrap\n"
 zip -r bootstrap.zip bootstrap
 printf "Remove bootstrap/\n"
 rm -r bootstrap/
-printf "Reboot\n"
-shutdown -r now
+printf "Reboot vericoind container\n"
+docker restart vericoind
