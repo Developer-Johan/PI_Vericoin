@@ -4,11 +4,11 @@ cd ~
 clear
 
 #Install git
-echo "\e[32mInstall git\e[0m"
+printf "\e[32mInstall git\e[0m\n"
 sudo apt -y install git
 
 #Clone from git
-echo "\e[32mClone from git\e[0m"
+printf "\e[32mClone from git\e[0m\n"
 
 if 
 	cd ~/git/PI_Vericoin/; 

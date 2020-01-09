@@ -5,6 +5,7 @@ RUN apt update -y && \
 
 RUN apt-get install -y git \
                  unzip \
+                 zip \
 				 wget \
 				 build-essential \
                  libboost-all-dev \
