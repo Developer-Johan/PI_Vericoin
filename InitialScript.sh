@@ -40,3 +40,7 @@ sudo find ~/git/PI_Vericoin/ -name '*.sh' -print0 | xargs -0 sudo chmod +x
 
 #Run createdockerfiles
 ./createdockerfiles.sh
+
+#Run docker vericoin
+echo "\e[32mRun docker vericoin\e[0m"
+sudo docker run -d --restart=always --mount source=vericoind_root_home,target=/root -p 58684:58684 --name vericoind  vericoin /root/Script/vericoind_startwithstake.sh
