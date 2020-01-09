@@ -6,11 +6,11 @@ printf "\e[33mCurrent path is: '`pwd`'\e[0m\n"
 cd ~/
 mkdir -p ~/dockerfiles
 
-#Creating Vericoin Docker File
+#Creating vericoin Docker File
 printf "\e[32mCreating vericoin docker file\e[0m\n"
 printf "\e[33mCurrent path is: '`pwd`'\e[0m\n"
 cd ~/dockerfiles/
 mkdir -p vericoindockerfile
-cp -n ~/git/pi_vericoin/DockerFiles/Vericoin/dockerfile ~/dockerfiles/vericoindockerfile/
+cp -n ~/git/pi_vericoin/dockerfiles/vericoin/dockerfile ~/dockerfiles/vericoindockerfile/
 
 sudo docker build -t vericoin ./vericoindockerfile/

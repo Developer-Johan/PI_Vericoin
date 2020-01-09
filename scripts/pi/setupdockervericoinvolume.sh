@@ -12,7 +12,7 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/peers.dat ]
 		printf "\e[31mpeers.dat already exsist\e[0m\n"
 	else
 		printf "\e[32mGetting peers.dat\e[0m\n"
-		cp ~/git/pi_vericoin/Data/peers.dat ./
+		cp ~/git/pi_vericoin/data/peers.dat ./
 fi
 
 if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/vericoin.conf ]
@@ -20,7 +20,7 @@ if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/vericoin.con
 		printf "\e[31mvericoin.conf already exsist\e[0m\n"
 	else
 		printf "\e[32mGetting vericoin.conf\e[0m\n"
-		cp ~/git/pi_vericoin/Data/vericoin.conf ./
+		cp ~/git/pi_vericoin/data/vericoin.conf ./
 fi
 
 if [ -f /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/blk0001.dat ]
@@ -42,7 +42,7 @@ cd /var/lib/docker/volumes/vericoind_root_home/_data/
 mkdir scripts
 cd scripts/
 
-for filename in ~/git/pi_vericoin/Scripts/Vericoin/*; do
+for filename in ~/git/pi_vericoin/Scripts/vericoin/*; do
 		printf "Copy to scripts folder: $filename\n"
 		cp $filename ./
 done
