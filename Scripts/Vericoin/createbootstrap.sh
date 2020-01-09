@@ -18,4 +18,4 @@ zip -r bootstrap.zip bootstrap
 printf "Remove bootstrap/\n"
 rm -r bootstrap/
 printf "Reboot\n"
-reboot now
+shutdown -r now
