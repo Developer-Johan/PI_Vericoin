@@ -4,8 +4,10 @@
 printf "\e[32mCreate bootstrap\e[0m\n"
 printf "\e[33mCurrent path is: '`pwd`'\e[0m\n"
 
-
+printf "Getting rights\n"
 cd /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/
+sudo chown $USER /var/lib/docker/ -R
+
 printf "Stopping vericoin\n"
 docker exec -it vericoind vericoind stop
 
