@@ -1,6 +1,6 @@
 # pi_vericoin
 
-###Steps to go:
+##Steps to go:
  1. Buy:
  . Raspberry PI 4 with 2GB or 4GB with a micro SD card with 16GB or more
  . Buy other required stuff (power supply, micro hdmi to hdmi converter, hdmi cable, monitor, usb keyboard)
