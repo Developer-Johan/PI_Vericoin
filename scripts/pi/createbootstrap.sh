@@ -11,6 +11,8 @@ sudo chown $USER /var/lib/docker/ -R
 printf "Stopping vericoin\n"
 docker exec -it vericoind vericoind stop
 
+sleep 10
+
 mkdir bootstrap
 printf "Copy blk0001.data\n"
 cp /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/blk0001.dat /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/bootstrap/

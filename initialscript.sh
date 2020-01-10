@@ -43,4 +43,4 @@ cd ~/git/pi_vericoin/scripts/pi/
 
 #Run docker vericoin
 echo "\e[32mRun docker vericoin\e[0m"
-sudo docker run -d --restart=always --mount source=vericoind_root_home,target=/root -p 58684:58684 --name vericoind  vericoin /root/scripts/vericoind_startwithoutstake.sh
+sudo docker run -d --restart=always --mount source=vericoind_root_home,target=/root -p 58684:58684 --name vericoind  vericoin /root/scripts/startup.sh

@@ -6,5 +6,3 @@ vericoind -daemon -staking -conf=~/.vericoin/vericoin.conf -wallet=wallet.dat -w
 sleep 180
 
 /root/scripts/vericoind_stake_start
-
-sleep infinity
