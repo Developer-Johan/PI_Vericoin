@@ -7,7 +7,7 @@ printf "\e[33mCurrent path is: '`pwd`'\e[0m\n"
 
 cd /var/lib/docker/volumes/vericoind_root_home/_data/.vericoin/
 printf "Stopping vericoin\n"
-docker exec -it vericoind stop
+docker exec -it vericoind vericoind stop
 
 mkdir bootstrap
 printf "Copy blk0001.data\n"
